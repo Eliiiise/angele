@@ -1,11 +1,14 @@
 body {
     background-color: #1B1B1B;
+    color: white;
 }
 
 h1 {
     font-family: 'Righteous', cursive;
+    font-size: 160px;
 }
 
 h2 {
     font-family: 'Roboto', sans-serif;
+    font-size: 40px;
 }

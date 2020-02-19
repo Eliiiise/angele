@@ -21,7 +21,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 20vh;
     margin-top: 20px;
 }
 
@@ -34,7 +33,7 @@
 
 .sideBar svg{
     height: 30px;
-    margin-bottom: 8vh;
+    z-index: 30;
 }
 
 .sideBar svg:nth-of-type(3){
@@ -43,16 +42,40 @@
 
 .sideBar svg path{
     fill: white;
+    transition: all 0.8s;
+}
+
+.sideBar svg:nth-of-type(1) path{
+    fill: #4758d5;
+    transition: all 0.8s;
 }
 
 .no {
     margin-bottom: 0;
     background-color: #4656EA;
-    margin-top: 20vh;
     margin-bottom: 20px;
 }
 
 .no p {
     font-family: 'Roboto', sans-serif;
     color: white;
+    font-weight: bold;
+}
+
+.selector {
+    background-color: #ffffff;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    position: absolute;
+    top: calc(50vh - 20px - 25px - 10px - 135px);
+    left:15px;
+    transition: all 0.8s;
+}
+
+.part {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 300px;
 }
