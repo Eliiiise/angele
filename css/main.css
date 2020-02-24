@@ -12,3 +12,18 @@ h2 {
     font-family: 'Roboto', sans-serif;
     font-size: 40px;
 }
+
+h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+}
+
+section
+{
+    margin-left: 180px;
+    height: 100vh;
+}
+
+p{
+    font-family: "Roboto";
+}

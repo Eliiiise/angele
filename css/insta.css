@@ -1,0 +1,57 @@
+section#insta{
+    margin-top: 150px;
+}
+
+section#insta div{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-right: 50px;
+}
+
+section#insta div div {
+    width: 30%;
+    height: auto;
+    display: grid;
+}
+
+section#insta div div img{
+    width: 100%;
+    display: flex;
+    margin-bottom: 40px;
+}
+
+section#insta div div:first-of-type, section#insta div div:last-of-type{
+    margin-top: -100px;
+}
+
+section#insta button
+{
+    padding: 8px;
+    background-color: #FFD600;
+    border: none;
+    border-radius: 100px;
+    width: 200px;
+}
+    section#insta button a
+    {
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 20px;
+    }
+
+section#insta .link{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+    section#insta .link p{
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+
+
+
