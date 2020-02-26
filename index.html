@@ -20,7 +20,7 @@
     <span class="selector"></span>
     <span class="cercle"><p>a</p></span>
     <div class="part">
-        <a href="#header" class="part1 .js-scrollTo"> <svg  height="512pt" viewBox="0 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg"><path d="m498.195312 222.695312c-.011718-.011718-.023437-.023437-.035156-.035156l-208.855468-208.847656c-8.902344-8.90625-20.738282-13.8125-33.328126-13.8125-12.589843 0-24.425781 4.902344-33.332031 13.808594l-208.746093 208.742187c-.070313.070313-.140626.144531-.210938.214844-18.28125 18.386719-18.25 48.21875.089844 66.558594 8.378906 8.382812 19.445312 13.238281 31.277344 13.746093.480468.046876.964843.070313 1.453124.070313h8.324219v153.699219c0 30.414062 24.746094 55.160156 55.167969 55.160156h81.710938c8.28125 0 15-6.714844 15-15v-120.5c0-13.878906 11.289062-25.167969 25.167968-25.167969h48.195313c13.878906 0 25.167969 11.289063 25.167969 25.167969v120.5c0 8.285156 6.714843 15 15 15h81.710937c30.421875 0 55.167969-24.746094 55.167969-55.160156v-153.699219h7.71875c12.585937 0 24.421875-4.902344 33.332031-13.808594 18.359375-18.371093 18.367187-48.253906.023437-66.636719zm0 0"/></svg></a> 
+        <a href="#header" class="part1 .js-scrollTo"> <svg  height="512pt" viewBox="0 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg"><path d="m498.195312 222.695312c-.011718-.011718-.023437-.023437-.035156-.035156l-208.855468-208.847656c-8.902344-8.90625-20.738282-13.8125-33.328126-13.8125-12.589843 0-24.425781 4.902344-33.332031 13.808594l-208.746093 208.742187c-.070313.070313-.140626.144531-.210938.214844-18.28125 18.386719-18.25 48.21875.089844 66.558594 8.378906 8.382812 19.445312 13.238281 31.277344 13.746093.480468.046876.964843.070313 1.453124.070313h8.324219v153.699219c0 30.414062 24.746094 55.160156 55.167969 55.160156h81.710938c8.28125 0 15-6.714844 15-15v-120.5c0-13.878906 11.289062-25.167969 25.167968-25.167969h48.195313c13.878906 0 25.167969 11.289063 25.167969 25.167969v120.5c0 8.285156 6.714843 15 15 15h81.710937c30.421875 0 55.167969-24.746094 55.167969-55.160156v-153.699219h7.71875c12.585937 0 24.421875-4.902344 33.332031-13.808594 18.359375-18.371093 18.367187-48.253906.023437-66.636719zm0 0"/></svg></a>
         <?xml version="1.0" encoding="iso-8859-1"?>
 
         <a href="#story" class="part2"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="512px" height="512px" class=""><g><g>
@@ -32,7 +32,7 @@
              viewBox="0 0 494.148 494.148" style="enable-background:new 0 0 494.148 494.148;" xml:space="preserve"><g><g><path d="M405.284,201.188L130.804,13.28C118.128,4.596,105.356,0,94.74,0C74.216,0,61.52,16.472,61.52,44.044v406.124
 			c0,27.54,12.68,43.98,33.156,43.98c10.632,0,23.2-4.6,35.904-13.308l274.608-187.904c17.66-12.104,27.44-28.392,27.44-45.884
 			C432.632,229.572,422.964,213.288,405.284,201.188z"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg></a>
-        
+
         <?xml version="1.0" encoding="iso-8859-1"?>
         <a href="#insta" class="part3"><svg class="part3" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
              viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g><g><path d="M352,0H160C71.648,0,0,71.648,0,160v192c0,88.352,71.648,160,160,160h192c88.352,0,160-71.648,160-160V160
@@ -100,7 +100,7 @@
             <p>Sortie de son premier album</p>
             <p>Deuxième single "Je veux tes yeux"</p>
         </div>
-        
+
     </div>
 </section>
 
@@ -111,60 +111,32 @@
         <h1>Brol : La suite</h1>
         <div class="musics">
             <span class="music-select"></span>
-           <div class="music track-one">
+            {{#song}}
+           <div class="music track-{{track_position}}">
                 <div>
-                   <img src="images/play.png" alt="">
-                   <p>La thune</p>
+                    <div class="control">
+                       <img src="images/play.png" class="play" alt="">
+                        <img src="images/stop.png" class="stop" alt="">
+                    </div>
+                    <p>{{title}}</p>
+
+                    <audio controls>
+                        <source src="{{preview}}" type="audio/mp3"  preload="none">
+                    </audio>
                 </div>
-                <img src="images/heart.png" alt="">
+               <div class="like">
+                   <img src="images/heart.png" alt="">
+                   <img src="images/heart-like.png" alt="">
+               </div>
+
             </div>
-            <div class="music track-two">
-               <div>
-                  <img src="images/play.png" alt="">
-                  <p>Balance ton quoi</p>
-               </div>
-               <img src="images/heart.png" alt="">
-           </div>
-           <div class="music track-three">
-               <div>
-                  <img src="images/play.png" alt="">
-                  <p>Jalousie</p>
-               </div>
-               <img src="images/heart.png" alt="">
-           </div>
-           <div class="music track-four">
-               <div>
-                  <img src="images/play.png" alt="">
-                  <p>Tout oublier</p>
-               </div>
-               <img src="images/heart.png" alt="">
-           </div>
-           <div class="music track-five">
-               <div>
-                  <img src="images/play.png" alt="">
-                  <p>La loi de Murphy</p>
-               </div>
-               <img src="images/heart.png" alt="">
-           </div>
-           <div class="music track-six">
-               <div>
-                  <img src="images/play.png" alt="">
-                  <p>Nombreux</p>
-               </div>
-               <img src="images/heart.png" alt="">
-           </div>
-           <div class="music track-seven">
-            <div>
-               <img src="images/play.png" alt="">
-               <p>Victime des réseaux</p>
-            </div>
-            <img src="images/heart.png" alt="">
+            {{/song}}
         </div>
-        
-            
+
+
         </div>
     </div>
- 
+
  </div>
 </section>
 
@@ -174,20 +146,20 @@
     <div class="insta-container">
         <div>
             <img src="images/angele-triste.jpg" alt="">
-            <img src="images/angele-loutre.jpg" alt=""> 
+            <img src="images/angele-loutre.jpg" alt="">
         </div>
-    
+
         <div>
             <img src="images/angele-bg.jpg" alt="">
-            <img src="images/angele-chapo.jpg.jpg" alt=""> 
+            <img src="images/angele-chapo.jpg.jpg" alt="">
         </div>
-    
+
         <div>
             <img src="images/angele-pate.jpg" alt="">
         </div>
     </div>
 
-    
+
 
     <div class="link">
         <p>Retrouves ses plus belles photos sur son</p>
@@ -198,8 +170,13 @@
 
 </section>
 
+<script type="text/javascript" src="js/libs/jquery.js"></script>
+<script type="text/javascript" src="js/libs/mustache.js"></script>
 <script type="text/javascript" src="js/sideBar.js"></script>
+<script type="text/javascript" src="js/like.js"></script>
 <script type="text/javascript" src="js/music-player.js"></script>
+<script type="text/javascript" src="js/song.js"></script>
+<script type="text/javascript" src="js/play.js"></script>
 
 </body>
 </html>

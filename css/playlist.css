@@ -47,12 +47,12 @@
 
 #player-container .music img
 {
-    width: 20px;
+    height: 20px;
 }
 
 #player-container .music>img
 {
-    margin-right: 15px;
+    margin-right: 20px;
 }
 
 #player-container .music
@@ -62,7 +62,7 @@
     justify-content: space-between;
 }
 
-#player-container .music div
+#player-container .music>div:nth-of-type(1)
 {
     display: flex;
     width: 50%;
@@ -73,11 +73,12 @@
     margin-bottom: 12px;
     padding: 10px;
     z-index: 1;
+    height: 20px;
 }
 
-#player-container .musics .music div
+#player-container .musics .music>div:nth-of-type(1)
 {
-    margin-left: 30px;
+    margin-left: 20px;
 }
 
 
@@ -96,10 +97,49 @@
 {
     position: absolute;
     width: 100%;
+    top:0;
     height: 40px;
     background-color: #FFD600;
     border-radius: 50px;
     transition: all 0.8s;
 }
 
+.like
+{
+    position: relative;
+    width: 20px;
+    margin-right: 20px;
+}
 
+.like>img
+{
+    position: absolute;
+}
+
+.like>img:nth-of-type(2)
+{
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.control
+{
+    position: relative;
+    margin-right: 20px;
+}
+
+.control>img
+{
+    position: absolute;
+}
+
+.control>img:nth-of-type(2)
+{
+    display: none;
+}
+
+audio
+{
+    width: 0;
+    height: 0;
+}
