@@ -1,0 +1,40 @@
+.cursor{
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    background-color: white;
+    z-index: 3;
+    pointer-events: none;
+    transition: width 0.3s, height 0.3s ease-in-out;
+}
+
+
+.cursor:nth-child(2).cursor-hover {
+    width: 120px;
+    height: 120px;
+    border: 2px solid white;
+    background-color: white;
+    transition: width 0.3s, height 0.3s;
+}
+
+.cursor:nth-child(2){
+    width: 50px;
+    height: 50px;
+    border: 2px solid white;
+    background-color: transparent;
+}
+
+
+.text-cursor {
+    text-transform: uppercase;
+    font-weight: bolder;
+    color : black;
+    padding-top: 45%;
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    opacity : 0;
+    transition: opacity 0.5s;
+}

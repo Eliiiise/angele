@@ -10,12 +10,21 @@
     <link rel="stylesheet" href="css/sideBar.css"/>
     <link rel="stylesheet" href="css/playlist.css"/>
     <link rel="stylesheet" href="css/insta.css"/>
+    <link rel="stylesheet" href="css/cursor.css"/>
+
 
 
     <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 </head>
 <body>
+
+<div class="cursor"></div>
+<div class="cursor">
+    <p class="text-cursor"></p>
+</div>
+    
+
 <div class="sideBar">
     <span class="selector"></span>
     <span class="cercle"><p>a</p></span>
@@ -42,7 +51,10 @@
     </div>
     <span class="cercle no"><p>?</p></span>
 </div>
+
+
 <header id="header">
+    
     <h1>ANGELE</h1>
     <h2>L'artiste de l'année</h2>
     <div class="wrapper">
@@ -61,11 +73,13 @@
     </div>
 </header>
 
+
+
 <section id="story">
 
     <div class="images">
         <!--<img src="images/angele-bruxelles.jpeg" alt="album la thune">-->
-        <img src="images/brol-bleu.jpg" alt="album la thune">
+        <img class="bouton" data-comment="BROL" src="images/brol-bleu.jpg" alt="album la thune">
 
         <!--<img src="images/angele-thune.jpg" alt="album la thune">-->
     </div>
@@ -106,7 +120,9 @@
 
 <section id="player-container">
 <div>
-    <img src="images/brol.jpg" alt="album angele">
+
+    <img class="bouton" data-comment="brol" src="images/brol.jpg" alt="album angele">
+
     <div>
         <h1>Brol : La suite</h1>
         <div class="musics">
@@ -114,8 +130,8 @@
             {{#song}}
            <div class="music track-{{track_position}}">
                 <div>
-                    <div class="control">
-                       <img src="images/play.png" class="play" alt="">
+                    <div class="control bouton">
+                       <img src="images/play.png" class="play"   alt="">
                         <img src="images/stop.png" class="stop" alt="">
                     </div>
                     <p>{{title}}</p>
@@ -163,7 +179,7 @@
 
     <div class="link">
         <p>Retrouves ses plus belles photos sur son</p>
-        <button value= "Instagram">
+        <button class="bouton"  data-comment ="cliques ici !"value= "Instagram">
             <a href="https://www.instagram.com/angele_vl/ " target="_blank">Instagram</a>
         </button>
     </div>
@@ -177,6 +193,9 @@
 <script type="text/javascript" src="js/music-player.js"></script>
 <script type="text/javascript" src="js/song.js"></script>
 <script type="text/javascript" src="js/play.js"></script>
+<script type="text/javascript" src="js/cursor.js"></script>
+
+
 
 </body>
 </html>
