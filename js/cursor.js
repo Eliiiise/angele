@@ -10,7 +10,6 @@ $(document).ready(function(){
     $(function(){
 
         $(".bouton").mouseover(function(){
-            console.log('coucou');
             $('.cursor:nth-child(2)').addClass("cursor-hover");
             $('.cursor').eq(0).css('display','none');
             var comment = $(this).attr('data-comment');
