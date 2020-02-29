@@ -1,22 +1,27 @@
 section#insta{
     margin-top: 150px;
+    position: relative;
 }
 
-    section#insta div{
+    .insta-container{
         display: flex;
-        width: 100%;
+        width: calc(100% - 70px);
         justify-content: space-between;
         padding-right: 50px;
     }
 
-    section#insta div div {
+    .insta-container div {
         width: 30%;
         height: auto;
         display: grid;
     }
 
-    section#insta div div:first-of-type, section#insta div div:last-of-type{
+    .insta-container div:first-of-type, .insta-container div:last-of-type{
         margin-top: -100px;
+    }
+
+    .insta-container div:nth-of-type(2) {
+        margin-top: -50px;
     }
 
         section#insta div div img{
@@ -44,12 +49,12 @@ section#insta{
             cursor: none;
         }
 
-        
 
 
 
 
-    
+
+
 
 section#insta .link{
     display: flex;
@@ -63,5 +68,23 @@ section#insta .link{
         font-size: 20px;
     }
 
+.cache {
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    top: -150px;
+}
 
+.cache div:nth-of-type(1) {
+    background-color: #1B1B1B;
+    width: 100%;
+    height: 150px;
+}
+
+.cache div:nth-of-type(2) {
+    background: rgb(27,27,27);
+    background: linear-gradient(180deg, rgba(27,27,27,1) 0%, rgba(27,27,27,0) 100%);
+    width: 100%;
+    height: 150px;
+}
 

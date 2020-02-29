@@ -8,6 +8,10 @@ body {
     cursor: none;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
 h1 {
     font-family: 'Righteous', cursive;
     font-size: 160px;

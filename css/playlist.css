@@ -10,6 +10,7 @@
 #player-container>div{
     width: 100%;
     display: flex;
+    position: relative;
 }
 
 
@@ -24,11 +25,18 @@
     width: 100%;
 }
 
-#player-container>div>div{
+#player-container>div>div:nth-of-type(1) {
     display: flex;
     flex-direction: column;
     width: 45%;
     margin-left: 5%;
+    height: 500px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#player-container>div>div::-webkit-scrollbar {
+    display: none;
 }
 
 #player-container div h1
@@ -142,4 +150,17 @@ audio
 {
     width: 0;
     height: 0;
+}
+
+.cache2 {
+    position: absolute;
+    width: 45%;
+    margin-left: 5%;
+    left: 500px;
+    height: 100px;
+    bottom: 0;
+    margin-bottom: -2px;
+    background: rgb(27,27,27);
+    background: linear-gradient(0deg, rgba(27,27,27,1) 0%, rgba(27,27,27,0) 100%);
+    z-index: 2;
 }
