@@ -15,14 +15,18 @@
 
 
 #player-container>div>img {
-    width: 500px;
-    height: 500px;
+    width: 40%;
+    height: 40%;
 }
 
 #player-container h1
 {
     font-size: 50px;
     width: 100%;
+}
+
+#player-container>div:nth-of-type(1) {
+    align-items: center;
 }
 
 #player-container>div>div:nth-of-type(1) {

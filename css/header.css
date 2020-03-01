@@ -8,6 +8,10 @@ header {
     position: relative;
 }
 
+header h1, header h2{
+    z-index: 1;
+}
+
 .wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

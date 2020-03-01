@@ -1,19 +1,24 @@
 #story{
     display: flex;
-    height: 100vh;
+    height: 160vh;
     width: 100%;
     justify-content: flex-start;
     position: relative;
     padding-top: 100px;
+    line-height: 22px;
 }
 
     #story h2{
        font-weight: 600;
+       margin-bottom: 15px;
     }
 
     #story h3{
-        font-size: 25px;
         margin-bottom: 15px;
+     }
+
+     #story p{
+         text-align: justify;
      }
  
 
@@ -23,15 +28,20 @@
 
 
     #story>div.textuels>div:first-of-type{
-        margin-bottom: 220px;
+        height: 430px;
     }
 
-    #story>div.textuels>div:nth-of-type(2){
-        margin-bottom: 60px;
+    #story>div.textuels>div:nth-of-type(2) {
+        height : 200px;
     }
+
+    #story>div.textuels>div:nth-of-type(3){
+        height: 280px;
+    }
+
 
     #story>div.images{
-        margin-top: 350px;
+        margin-top: 70px;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
@@ -40,10 +50,12 @@
 
         #story>div.images img{
             width: 300px;
+            margin-bottom: 80px;
         }
 
-        #story>div.images img:first-of-type{
-            margin-bottom: 50px;
+        #story>div.images img:nth-of-type(2n+2){
+            margin-right: 100px;
+            margin-bottom: 80px;
         }
 
     
@@ -58,17 +70,19 @@
 
     #story div.line{
         border-left: 10px solid white;
-        height: 300px;
+        height: 400px;
     }
 
     #story div.line:nth-of-type(4){
-        border-left: 10px solid white;
-        height: 100px;
+        height: 150px;
     }
 
     #story div.line:nth-of-type(6){
-        border-left: 10px solid white;
-        height: 50px;
+        height: 240px;
+    }
+
+    #story div.line:nth-of-type(8){
+        height: 200px;
     }
 
 

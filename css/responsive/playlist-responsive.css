@@ -1,0 +1,62 @@
+@media screen and (max-width: 1200px)
+{
+
+
+    
+    
+}
+
+
+@media screen and (max-width: 1000px)
+{
+
+    #player-container .music p{
+        font-size: 14px;
+    }
+
+    #player-container h1
+    {
+    font-size: 30px;
+    width: 100%;
+    }
+
+    #player-container>div>div:nth-of-type(1) {
+        width: 50%;
+    }
+
+}
+
+
+@media screen and (max-width: 900px)
+{
+
+    #player-container{
+        display: block;
+        height: 150vh;
+    }
+
+    #player-container>div>img {
+        margin-bottom: 80px;
+    }
+
+    #player-container > div {
+        flex-direction: column;
+    }
+
+    #player-container > div > div:nth-of-type(1){
+        margin-left: 0;
+        width: 80%;
+    }
+
+    #player-container>div>img {
+        width: 80%;
+        height: 80%;
+    }
+
+    .cache2{
+        width: 80%;
+        left: 0;
+        margin-left: 0;
+    }
+
+}

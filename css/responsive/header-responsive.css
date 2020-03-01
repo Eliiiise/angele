@@ -1,0 +1,27 @@
+@media screen and (max-width: 900px)
+{
+    .wrapper{
+        height: calc(100vh - 20px);
+        width: calc(300vh/4 );
+        right: 10px;
+    }
+}
+
+@media screen and (max-width: 700px)
+{
+
+    header {
+        margin-left: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .wrapper{
+        /*height: calc(100vh);
+        width: calc(300vh/4 );
+        right: 10px;*/
+        display: none;
+    }
+
+
+}

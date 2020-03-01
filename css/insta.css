@@ -5,15 +5,13 @@ section#insta{
 
     .insta-container{
         display: flex;
-        width: calc(100% - 70px);
         justify-content: space-between;
-        padding-right: 50px;
+        padding: 0 50px;
     }
 
     .insta-container div {
         width: 30%;
         height: auto;
-        display: grid;
     }
 
     .insta-container div:first-of-type, .insta-container div:last-of-type{

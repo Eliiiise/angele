@@ -1,0 +1,148 @@
+@media screen and (max-width: 1000px)
+{
+
+        #story .textuels p{
+            font-size: 14px ;
+        }
+
+        #story>div.images{
+            width: 30%;  
+        }
+
+            #story>div.images img{
+                width: 240px;
+                padding-left: 10px;
+                margin-bottom: 120px;
+            }
+
+            #story>div.images img:nth-of-type(2n+2){
+                margin-right: 0px;
+            }
+
+            #story div.line{
+                border-left: 7px solid white;
+                height: 400px;
+            }
+    
+            #story div.circle{
+                height: 25px;
+                width: 25px;
+                border: solid white 7px;
+                border-radius: 50%;
+                display: inline-block;
+            }
+
+        
+}
+
+@media screen and (max-width: 700px)
+{
+
+    #story{
+        width: 100%;
+        justify-content: space-around;
+        padding-left: 10px;
+    }
+
+        #story>div{
+            width: 40%;
+        }
+
+        #story div.drawings{
+            width: 8%;
+        }
+
+        #story div.images{
+            align-items: center;
+        }
+
+        #story div.drawings{
+            width: 8%;
+        }
+
+        #story div.line{
+            border-left: 5px solid white;
+            height: 400px;
+        }
+
+        #story div.circle{
+            height: 25px;
+            width: 25px;
+            border: solid white 5px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+       
+    
+       
+
+   
+        
+}
+
+@media screen and (max-width: 600px)
+{
+
+    #story>div.images img{
+        width: 175px;
+        margin-bottom: 140px;
+    }
+
+    #story>div.images{
+        margin-top: 200px;
+    }
+
+    #story div.line{
+        height: 440px;
+    }
+
+    #story .textuels p{
+        font-size: 12px ;
+    }
+
+    #story>div.textuels>div{
+        padding-right: 30px;
+    }
+
+
+
+    #story>div.images img:nth-of-type(2){
+        margin-bottom: 130px;
+    }
+
+    #story>div.images img:nth-of-type(2){
+        margin-bottom: 130px;
+    }
+
+    #story>div.images img:nth-of-type(3){
+        margin-bottom: 190px;
+    }
+
+   
+        
+}
+
+@media screen and (max-width: 500px)
+{
+
+    #story>div.images img{
+        width: 130px;
+        margin-bottom: 140px;
+    }
+        
+}
+
+@media screen and (max-width: 400px)
+{
+
+    #story>div.textuels>div:first-of-type{
+        height: 470px;
+    }
+
+    #story>div.images img{
+        width: 100px;
+        margin-bottom: 220px;
+    }
+        
+}
