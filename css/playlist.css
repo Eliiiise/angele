@@ -158,13 +158,14 @@ audio
 
 .cache2 {
     position: absolute;
-    width: 45%;
+    width: 60%;
     margin-left: 5%;
-    left: 500px;
+    left: 40%;
     height: 100px;
     bottom: 0;
     margin-bottom: -2px;
     background: rgb(27,27,27);
     background: linear-gradient(0deg, rgba(27,27,27,1) 0%, rgba(27,27,27,0) 100%);
     z-index: 2;
+    pointer-events: none;
 }

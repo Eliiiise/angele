@@ -2,8 +2,8 @@
 {
 
 
-    
-    
+
+
 }
 
 
@@ -32,7 +32,9 @@
 
     #player-container{
         display: block;
-        height: 150vh;
+        height: auto;
+        padding-bottom: 100px;
+        margin-top: 100px;
     }
 
     #player-container>div>img {
@@ -54,9 +56,32 @@
     }
 
     .cache2{
-        width: 80%;
+        width: 100%;
         left: 0;
         margin-left: 0;
     }
 
+}
+
+@media screen and (max-width: 500px)
+{
+    #player-container{
+        display: block;
+        height: 140vh;
+    }
+
+    #player-container>div>img {
+        width: 90%;
+        height: 90%;
+    }
+}
+
+
+@media screen and (max-width: 400px)
+{
+    #player-container{
+        display: block;
+        height: 120vh;
+        margin-top: 50px;
+    }
 }

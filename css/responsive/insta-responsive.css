@@ -1,6 +1,32 @@
-@media screen and (max-width: 400px)
+@media screen and (max-width: 700px)
+{
+    .cache {
+        top: -250px;
+    }
+
+    #insta {
+        height: auto;
+    }
+
+    section#insta .link {
+        width: 90%;
+        margin: 5%;
+        margin-bottom: 150px;
+    }
+}
+
+@media screen and (max-width: 500px)
 {
     .insta-container{
         padding: 0 20px;
+    }
+
+    .insta-container div:nth-of-type(2), .insta-container div:nth-of-type(1) {
+        display: none;
+    }
+
+    .insta-container div:nth-of-type(3) {
+        width: 100%;
+        margin-top: -100px;
     }
 }
